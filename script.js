@@ -50,6 +50,11 @@ function checkAns(idx) {
             setTimeout(levelUp, 1000);
         }
     } else {
+         // Flash the body red on wrong answer
+         document.body.classList.add("wrong");
+         setTimeout(() => {
+             document.body.classList.remove("wrong");
+         }, 300);
         h2.innerHTML = `Game is over! Your Score was <b>${level}</b> <br> Press any key to start the game.`;
         reset();
     }
@@ -75,3 +80,5 @@ function reset() {
     userSeq = [];
     level = 0;
 }
+
+

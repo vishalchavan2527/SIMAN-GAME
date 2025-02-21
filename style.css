@@ -39,3 +39,8 @@ body{
 .userflash{
     background-color: orangered;
 }
+
+
+.wrong {
+    background-color: rgb(243, 110, 16);
+}
